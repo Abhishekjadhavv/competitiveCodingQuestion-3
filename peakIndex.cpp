@@ -20,6 +20,12 @@ int main()
 
     for (int i = 0; i < size - 1; i++)
     {
+        if (arr[0] > arr[1])
+        {
+            cout << "This is not a mountain Array" << endl;
+            return 0;
+        }
+        
         if (arr[i] < arr[i + 1])
         {
             if (check == 0)
@@ -36,7 +42,7 @@ int main()
             check = 0;
         }
     }
-    
+
     if (check == 1)
     {
         cout << "This is not a mountain Array" << endl;
