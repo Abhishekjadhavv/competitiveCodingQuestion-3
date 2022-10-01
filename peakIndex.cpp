@@ -36,6 +36,12 @@ int main()
             check = 0;
         }
     }
+    
+    if (check == 1)
+    {
+        cout << "This is not a mountain Array" << endl;
+        return 0;
+    }
 
     cout << "Index is " << index << endl;
     return 0;
